@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App | Murad Hasan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tasks"></i> Todo List</h1>
+                    <button class="theme-toggle" id="themeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="input" placeholder="Add a new task...">
+            <button onclick="add_task()">
+                <i class="fa-solid fa-circle-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div class="stats">
+            <div>Total: <span id="total-count">0</span></div>
+            <div>Completed: <span id="completed-count">0</span></div>
+            <div>Pending: <span id="pending-count">0</span></div>
+        </div>
+
+        <div class="clearbtn">
+            <button id="clearBTN"> Clear All Tasks <i class="fa-solid fa-trash-can-arrow-up"></i></button>
+        </div>
+
+        <div class="tasks-container" id="output">
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2025 Murad Hasan. All rights reserved.
+        </footer>
+    </div>
+   <script src="sctipt.js\"></script>
+  </body>
+</html>
